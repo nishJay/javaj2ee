@@ -1,3 +1,5 @@
+
+
 import java.util.*;
 
 public class arraylist {
@@ -11,11 +13,14 @@ public class arraylist {
 		this.c = c;
 	}
 	
+	
+
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return a+b+c;
+		return "arraylist [a=" + a + ", b=" + b + ", c=" + c + "]";
 	}
+
+
 
 	public static void main(String args[])
 	{
