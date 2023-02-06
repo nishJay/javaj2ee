@@ -16,6 +16,12 @@ public class arraylist {
 		for(String s:colors){
 			System.out.println(s);
 		}
+
+        for (Iterator col = colors.iterator(); col.hasNext();) {
+			String s1 = (String) col.next();
+			System.out.println(s1);
+			
+		}
 	}
 
 }
