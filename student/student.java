@@ -65,11 +65,27 @@ public class student
 		
 	}
 
+	for (Iterator j = s.iterator(); j.hasNext();)
+       {
+    	   student sto = (student)j.next(); 
+		   System.out.println(s.indexOf(sto)+": "+ sto.name);    
+    	  	   
+    	}
 
+	System.out.println("Enter the index of the student whose name has to be updated");
+	Integer usnch = sc.nextInt();
+	System.out.println("Enter the new name has to be updated");
+	String naam = sc.next();
 
-
-
-       
+	for (Iterator j = s.iterator(); j.hasNext();)
+       {
+    	   student sto = (student)j.next(); 
+		   if(s.indexOf(sto)==usnch){
+			sto.name = naam;			
+		   }
+		   System.out.println(s.indexOf(sto)+": "+ sto.name);    
+    	  	   
+    	}       
    }
 
 }
